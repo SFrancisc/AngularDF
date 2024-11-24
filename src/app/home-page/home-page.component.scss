@@ -1,0 +1,316 @@
+// Variables
+$font-family: 'Poppins', sans-serif;
+$bg-color: #90A5B3;
+$text-color: #fff;
+$text-black: #000;
+$transition: 0.5s;
+
+// Global styles
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  box-sizing: border-box;
+}
+
+body {
+  background: $bg-color;
+  color: $text-color;
+}
+
+// Sections
+#Home {
+  width: 100%;
+  height: 120vh;
+  background: url(../images/1.png) center / cover;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .logo {
+    width: 140px;
+    background-color: $bg-color;
+    margin-top: -10px;
+  }
+
+  ul {
+    li {
+      display: inline-block;
+      list-style: none;
+      margin: 10px 20px;
+
+      a {
+        color: $text-black;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+
+        &::after {
+          content: '';
+          width: 0;
+          height: 3px;
+          background: $text-black;
+          position: absolute;
+          left: 0;
+          bottom: -6px;
+          transition: $transition;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Header text
+.header-text {
+  color: $text-black;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 20px;
+
+  h1 {
+    color: $text-color;
+    text-align: left;
+    margin-top: 20%;
+    font-size: 20px;
+  }
+}
+
+// Buttons
+.btn-programare {
+  display: block;
+  margin: 10px;
+  width: fit-content;
+  border: 1px solid $text-black;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: $text-color;
+  background-color: $bg-color;
+  transition: background $transition;
+
+  &:hover {
+    background: $text-black;
+  }
+}
+
+// Reusable section
+#CereOferta {
+  padding: 80px 0;
+  color: $text-black;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .about-col-1,
+    .about-col-2 {
+      flex-basis: 50%;
+
+      h1 {
+        position: absolute;
+        color: $text-black;
+        padding: 20px;
+        margin-top: 5%;
+      }
+
+      img {
+        display: grid;
+        width: 100%;
+        border-radius: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+      }
+
+      a {
+        display: block;
+        position: absolute;
+        margin: -90px 11%;
+        width: fit-content;
+        border: 1px solid $text-black;
+        padding: 14px 50px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: $text-color;
+        background-color: $bg-color;
+        transition: background $transition;
+
+        &:hover {
+          background: $text-black;
+        }
+      }
+    }
+
+    .about-col-2 {
+      h1 {
+        color: $text-color;
+        margin-left: 25px;
+      }
+
+      img {
+        margin-left: 25px;
+      }
+    }
+  }
+}
+
+// Remaining Sections
+#DeCeNoi {
+  width: 100%;
+  height: 80vh;
+  background: url(../images/5.png) center / cover fixed;
+
+  .DeCeNoi-text {
+    color: $text-color;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+
+    p {
+      font-size: 30px;
+    }
+
+    img {
+      width: 30%;
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+
+#services1 {
+  padding: 80px 0;
+  background-color: $text-color;
+
+  .rand {
+    background-color: $bg-color;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .subtitle {
+    font-size: 60px;
+    font-weight: 600;
+    color: $text-color;
+
+    .line {
+      content: '';
+      width: 100px;
+      height: 2px;
+      background: $text-black;
+      position: absolute;
+    }
+  }
+
+  .paragraf {
+    padding: 10px 0;
+    font-size: 20px;
+  }
+
+  .col-1 {
+    flex-basis: 35%;
+    margin: 10px 10px;
+
+    img {
+      width: 80%;
+      border-radius: 15px;
+    }
+  }
+
+  .col-2 {
+    flex-basis: 60%;
+    margin: 10px 10px;
+
+    .btn {
+      display: block;
+      margin: 50px auto;
+      width: fit-content;
+      border: 1px solid $text-black;
+      padding: 14px 50px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: $text-color;
+      transition: background $transition;
+
+      &:hover {
+        background: $text-black;
+      }
+    }
+  }
+  export class HomePageComponent {
+    sidemenuStyle = {
+      'background-color': 'red', // Example style, modify as needed
+      'width': '250px',
+      'position': 'fixed',
+      'top': '0',
+      'left': '0'
+    };
+  }
+
+}
+
+// Responsiveness
+@media only screen and (max-width: 600px) {
+  #header {
+    background: url(../images/phone-background.png);
+    position: fixed;
+  }
+
+  .header-text {
+    margin-top: 10%;
+    font-size: 20px;
+
+    h1 {
+      margin-top: 30%;
+      text-align: center;
+    }
+  }
+
+  .btn-programare {
+    margin: 40px auto;
+  }
+
+  nav {
+    .fa-solid {
+      display: block;
+      font-size: 20px;
+    }
+
+    ul {
+      background: $bg-color;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right $transition;
+
+      li {
+        display: block;
+        margin: 25px;
+      }
+
+      .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}
