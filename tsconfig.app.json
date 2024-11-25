@@ -13,6 +13,9 @@
     "src/main.server.ts",
     "src/server.ts"
   ],
+  "assets": [
+   "src/assets"
+],
   "include": [
     "src/**/*.d.ts"
   ]

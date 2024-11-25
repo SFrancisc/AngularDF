@@ -1,7 +1,6 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
-import { HomePageComponent } from './app/home-page/home-page.component'; // Import the standalone component
+import { AppComponent } from './app/app.component';
 
-// Bootstrap the standalone component directly
-bootstrapApplication(HomePageComponent, appConfig)
+bootstrapApplication(AppComponent, appConfig)
   .catch((err) => console.error(err));

@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component'; // Correct path to your component
 
-const routes: Routes = [
-  { path: '', component: HomePageComponent },  // Add routes for other components as needed
+export const routes: Routes = [
+  { path: '', component: HomePageComponent },
 ];
 
 @NgModule({
