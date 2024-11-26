@@ -1,9 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component'; // Correct path to your component
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactComponent } from './contact/contact.component';
+import { ServicesComponent } from './services/services.component';
 
 export const routes: Routes = [
-  { path: '', component: HomePageComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect default route
+  { path: 'home', component: HomePageComponent },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'services', component: ServicesComponent },
 ];
 
 @NgModule({
