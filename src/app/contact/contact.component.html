@@ -1,1 +1,84 @@
-<p>contact works!</p>
+<div id="contact">
+  <div class="container">
+    <nav>
+      <a routerLink="/">
+        <img src="../../assets/images/Logo.png" class="logo" alt="Logo">
+      </a>
+      <ul id="sidemenu">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/about-us">About Us</a></li>
+        <li><a routerLink="/services">Services</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" (click)="closeMenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" (click)="openMenu()"></i>
+    </nav>
+    <div class="header-text">
+      <h1>Contact<span>Us</span></h1>
+    </div>
+  </div>
+</div>
+
+<div id="contact-form">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title"><span>Contact</span> DETAIL FRANK</h1>
+        <p><i class="fa-solid fa-paper-plane"></i> szantofrancisc08&#64;gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> Tel: +40724552359</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100086361797680&locale=ro_RO" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/detail.frank" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@detail.frank" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://www.youtube.com/@detail_frank" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form (ngSubmit)="onSubmit(contactForm.value)" #contactForm="ngForm">
+          <input type="text" name="Nume" placeholder="Nume" ngModel required>
+          <input type="email" name="Email" placeholder="Email" ngModel required>
+          <textarea name="Mesaj" rows="6" placeholder="Mesaj" ngModel></textarea>
+          <button type="submit" class="btn" [disabled]="!contactForm.valid">TRIMITE MESAJ</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="Proiect-special">
+  <div class="container">
+    <div class="Proiect-special-text">
+      <h1>AI UN PROIECT SPECIAL?</h1>
+      <a routerLink="/contact" class="btn-proiectspecial">HAI SA DISCUTAM</a>
+    </div>
+  </div>
+</div>
+
+<div class="copyright">
+  <p>Copyright by &#64;DETAIL FRANK</p>
+</div>
+
+<div class="container">
+  <nav>
+    <a routerLink="/">
+      <img src="../../assets/images/Logo.png" class="logo" alt="Logo">
+    </a>
+    <p>Copyright by<br> &#64;DETAIL FRANK</p>
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/about-us">About Us</a></li>
+      <li><a routerLink="/services">Services</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+      <li><a routerLink="#">Politica de Cookie</a></li>
+      <li><a routerLink="#">Politica de confidentialitate</a></li>
+    </ul>
+  </nav>
+</div>
