@@ -4,6 +4,7 @@ import { HomePageComponent } from './home-page/home-page.component'; // Correct 
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
+import { DetailingInteriorComponent } from './services/detailing-interior/detailing-interior.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect default route
@@ -11,6 +12,7 @@ export const routes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'services', component: ServicesComponent },
+  { path: 'detailing-interior', component: DetailingInteriorComponent },
 ];
 
 @NgModule({

@@ -1,1 +1,132 @@
-<p>detailing-interior works!</p>
+<div id="aboutUs">
+  <div class="container">
+    <nav>
+      <a routerLink="/">
+        <img src="../../../assets/images/Logo.png" class="logo" alt="Logo">
+      </a>
+      <ul id="sidemenu">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/about-us">AboutUs</a></li>
+        <li><a routerLink="/services">Services</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" (click)="closeMenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" (click)="openMenu()"></i>
+    </nav>
+    <div class="header-text">
+      <h1>Interior<span> D.</span></h1>
+    </div>
+  </div>
+</div>
+<div class="info-text">
+  <div class="container">
+    <div class="info-list">
+      <div class="info">
+        <h1>Detailing Interior</h1>
+        <h2>DETAIL<br>FRANK</h2>
+        <h3 class="line"></h3>
+      </div>
+      <div class="info">
+        <p>
+          Întregul interior și compartimentul portbagajului sunt supuse curățării în profunzime.
+          Tapițeria din piele este curățată cu un detergent pentru piele, pH neutru și apoi tratată cu un balsam.
+          Covoarele, mocheta și scaunele din țesătură sunt supuse curățării profunde și extracției cu solutie.
+          Planșa de bord, consola centrală și panourile ușilor sunt curățate și apoi protejate cu un dressing pentru a
+          obține aspectul lor original. Geamurile sunt curățate fără dungi.<br><br>
+
+          Se poate percepe o taxă suplimentară pentru poluare gravă sau multe fire de păr de câine / pisică.
+          Solicitați o ofertă gratuită contactându-ne prin e-mail sau vizitați locația noastră fără obligații.
+        </p>
+      </div>
+      <div class="info">
+        <img src="../../../assets/images/interior.jpg" class="img-aboutUs" alt="About Us Image">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="price-cards">
+  <h2>Preturi detailing interior</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Detailing interior</h3>
+      <p class="price">€<span>100</span></p>
+      <ul>
+        <li>Aspirare completa si scoaterea nisipului din mocheta</li>
+        <li>Curățare volan, consola centrală și fetele ușilor</li>
+        <li>Curățarea și hidratarea zonelor din piele</li>
+        <li>Scaunele din material, mocheta şi covoarele (inserție extracție)</li>
+        <li>Curatarea centurilor si a elementelor vitrate</li>
+        <li>Curatarea portbagajului</li>
+        <li>Tratare elementelor din plastic (protecție UV, aspect nou)</li>
+        <li>Curățarea gemurilor fără urme</li>
+      </ul>
+      <p class="duration">⏺ Durata aproximativa: 1 zi</p>
+      <button routerLink="/contact" class="btn">FĂ O PROGRAMARE</button>
+    </div>
+    <div class="card">
+      <h3>Detailing rapid interior</h3>
+      <p class="price">€<span>50</span></p>
+      <ul>
+        <li>Aspirare completa</li>
+        <li>Curățare volan, consola centrală și fetele ușilor</li>
+        <li>Curatare elementele vitrate</li>
+        <li>Curatare covorase</li>
+        <li>Curatarea Portbagajului</li>
+        <li>Curățarea gemurilor fără urme</li>
+      </ul>
+      <button routerLink="/contact" class="btn">FĂ O PROGRAMARE</button>
+    </div>
+    <div class="card">
+      <h3>Tratament cu Ozone</h3>
+      <p class="price">€<span>40</span></p>
+      <ul>
+        <li>Îndepărtarea mirosurilor murdare</li>
+        <li>Gazul de ozon neutralizează până în cele mai mici colțuri</li>
+        <li>Acest pachet este posibil doar după o curățare interioară</li>
+      </ul>
+      <button routerLink="/contact" class="btn">FĂ O PROGRAMARE</button>
+    </div>
+    <div class="card">
+      <h3>Retapitare plafon</h3>
+      <p routerLink="/contact" class="price">€<span>200</span></p>
+      <ul>
+        <li>Demontarea stalpilor</li>
+        <li>Demontarea parasolarelor</li>
+        <li>Demontarea manerelor si a plasticelor</li>
+        <li>Inlocuirea materialului vechi si al adezivului</li>
+        <li>Se monteaza totul inapoi</li>
+        <li>Pentru retapitarea stalpilor se mai adauga 100€</li>
+      </ul>
+      <button routerLink="/contact" class="btn">FĂ O PROGRAMARE</button>
+    </div>
+  </div>
+  <p class="note">Prețurile de mai sus sunt fără TVA și sunt orientative (*).</p>
+</div>
+
+<div id="Proiect-special">
+  <div class="container">
+    <div class="Proiect-special-text">
+      <h1>AI UN PROIECT SPECIAL?</h1>
+      <a routerLink="/contact" class="btn-proiectspecial">HAI SA DISCUTAM</a>
+    </div>
+  </div>
+</div>
+<div class="copyright">
+  <p>Copyright by &#64;DETAIL FRANK</p>
+</div>
+<div class="container">
+  <nav>
+    <a routerLink="/">
+      <img src="../../../assets/images/Logo.png" class="logo" alt="Footer Logo">
+    </a>
+    <p>Copyright by<br> &#64;DETAIL FRANK</p>
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/about-us">AboutUs</a></li>
+      <li><a routerLink="/services">Services</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+      <li><a href="#">Politica de Cookie</a></li>
+      <li><a href="#">Politica de confidentialitate</a></li>
+    </ul>
+  </nav>
+</div>
