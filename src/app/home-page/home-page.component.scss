@@ -18,11 +18,18 @@ body {
 .container{
   padding: 10px 10%;
 }
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100vw; /* Ocupă toată lățimea vizibilă */
+  position: fixed; /* Fixează meniul sus */
+  top: 0;
+  left: 0;
+  padding: 0px 50px; /* Adaugă puțin spațiu în interior */
+  z-index: 1000; /* Asigură că e deasupra altor elemente */
 }
 .logo{
   width: 140px;
@@ -35,7 +42,7 @@ nav ul li{
   margin: 10px 20px;
 }
 nav ul li a{
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -57,7 +64,7 @@ nav ul li a:hover::after{
   color: #000000;
   text-align: center;
   font-size: 60px;
-  margin-top: 20px;
+  margin-top: 150px;
 }
 .header-text h1{
   color: #fff;
