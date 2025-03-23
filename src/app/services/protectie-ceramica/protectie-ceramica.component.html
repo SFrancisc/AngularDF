@@ -1,1 +1,211 @@
 <p>protectie-ceramica works!</p>
+<div id="aboutUs">
+  <div class="container">
+    <nav>
+      <a routerLink="/">
+        <img src="../../../assets/images/Logo.png" class="logo" alt="Logo">
+      </a>
+      <ul id="sidemenu">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/about-us">AboutUs</a></li>
+        <li><a routerLink="/services">Services</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" (click)="closeMenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" (click)="openMenu()"></i>
+    </nav>
+    <div class="header-text">
+      <h1>Protectie<span> C.</span></h1>
+    </div>
+  </div>
+</div>
+<div class="info-text">
+  <div class="container">
+    <div class="info-list">
+      <div class="info">
+        <h1>Protectie Ceramica</h1>
+        <h2>DETAIL<br>FRANK</h2>
+        <h3 class="line"></h3>
+      </div>
+      <div class="info">
+        <p>
+          Descoperă puterea protecției ceramice de ultimă generație, special conceputa pentru a-ți menține vehiculul
+          impecabil și protejat, indiferent de condiții. Alegerea unei protecții ceramice nu înseamnă doar un strat
+          suplimentar – înseamnă un angajament pentru durabilitate și estetică desăvârșită.<br><br>
+
+          Ce oferim?<br>
+          Un proces profesional și personalizat, care combină aplicarea protectiei ceramice cu experiența noastra pentru un
+          rezultat impresionant. Poți alege protecția în funcție de nevoile tale, cu o durabilitate între 1 și 4 ani.<br><br>
+
+          Beneficii unice ale protecției ceramice:<br>
+
+          Barieră avansată împotriva murdăriei: Vopseaua rămâne mai curată pentru mai mult timp, datorită proprietăților
+          hidrofobe extraordinare.<br>
+          Rezistență la zgârieturi? Datorita proprietatilor hidrofobe, masina este mai usor de spalat astfel ca la spalarea manuala se
+          micsoreaza riscul de a zgaria lacul, masina respingand o mare parte din muradrie.<br>
+          Luciu profund și aspect premium: Fiecare detaliu al vopselei tale este amplificat, oferindu-i o strălucire de showroom.<br>
+          Ușurință în întreținere: Vehiculul tău va fi mai ușor de curățat, reducând efortul și timpul necesar spălării.<br><br>
+        </p>
+      </div>
+      <div class="info">
+        <img src="../../../assets/images/ceramica.jpg" class="img-aboutUs" alt="About Us Image">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="price-cards">
+  <h2>Preturi: Protectie Ceramica</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Caroserie: Garantie <br>4ani/50k km</h3>
+      <p class="price">€<span>250</span></p>
+      <ul>
+        <li>Necesita un pachet de detailing exterior in prealabil</li>
+        <li>Aplicare a doua straturi de protectie ceramica</li>
+        <li>Cel mai profund aspect lucios</li>
+        <li>Cel mai bun tratament hidrofob</li>
+      </ul>
+      <p class="duration">⏺ Durata aproximativa: 1 zi</p>
+      <button routerLink="/contact" class="btn">FĂ O PROGRAMARE</button>
+    </div>
+    <div class="card">
+      <h3>Caroserie: Garantie <br>3ani/40k km</h3>
+      <p class="price">€<span>200</span></p>
+      <ul>
+        <li>Necesita un pachet de detailing exterior in prealabil</li>
+        <li>Aplicare a unui singur strat de protectie ceramica</li>
+        <li>Aspect lucios</li>
+        <li>Tratament hidrofob</li>
+      </ul>
+      <p class="duration">⏺ Durata aproximativa: 1 zi</p>
+      <button routerLink="/contact" class="btn">FĂ O PROGRAMARE</button>
+    </div>
+    <div class="card">
+      <h3>Caroserie: Garantie<br> 2ani/25k km</h3>
+      <p class="price">€<span>150</span></p>
+      <ul>
+        <li>Necesita un pachet de detailing exterior in prealabil</li>
+        <li>Aplicare a unui singur strat de protectie ceramica</li>
+        <li>Aspect lucios</li>
+        <li>Tratament hidrofob</li>
+      </ul>
+      <p class="duration">⏺ Durata aproximativa: 1 zi</p>
+      <button routerLink="/contact" class="btn">FĂ O PROGRAMARE</button>
+    </div>
+    <div class="card">
+      <h3>Caroserie: Garantie <br>1an/12k km</h3>
+      <p routerLink="/contact" class="price">€<span>100</span></p>
+      <ul>
+        <li>Necesita un pachet de detailing exterior in prealabil</li>
+        <li>Aplicare a unui singur strat de protectie ceramica</li>
+        <li>Aspect lucios</li>
+        <li>Tratament hidrofob</li>
+      </ul>
+      <p class="duration">⏺ Durata aproximativa: 1 zi</p>
+      <button routerLink="/contact" class="btn">FĂ O PROGRAMARE</button>
+    </div>
+
+    <div class="card">
+      <h3>Piele: Grantie 18luni</h3>
+      <p routerLink="/contact" class="price">€<span>80</span></p>
+      <ul>
+        <li>Degresare pele</li>
+        <li>Aplicarea tratamentului ceramic</li>
+        <li>Protectie UV</li>
+        <li>Efect hidrofob</li>
+        <li>Protectie impotriva transferului de culoare</li>
+        <li>Pastrarea efectului mat de piele curata</li>
+      </ul>
+      <p class="duration">⏺ Durata aproximativa: 1 zi</p>
+      <button routerLink="/contact" class="btn">FĂ O PROGRAMARE</button>
+    </div>
+
+    <div class="card">
+      <h3>Jante (Set): Garantie <br>9luni/10k km</h3>
+      <p routerLink="/contact" class="price">€<span>100</span></p>
+      <ul>
+        <li>Spalarea rotilor</li>
+        <li>Decontaminarea jantelor</li>
+        <li>Polishare +20€</li>
+        <li>Degresare</li>
+        <li>Aplicarea tratamentului ceramic</li>
+      </ul>
+      <p class="duration">⏺ Durata aproximativa: 1 zi</p>
+      <button routerLink="/contact" class="btn">FĂ O PROGRAMARE</button>
+    </div>
+
+    <div class="card">
+      <h3>Parbriz: Garantie<br> 1-an/12k km</h3>
+      <p routerLink="/contact" class="price">€<span>20</span></p>
+      <ul>
+        <li>Decontaminarea Geamului</li>
+        <li>Aplicare tratamentului hidrofob</li>
+        <li>Geamurile laterale fata spate si luneta +20€</li>
+      </ul>
+      <p class="duration">⏺ Durata aproximativa: 1 zi</p>
+      <button routerLink="/contact" class="btn">FĂ O PROGRAMARE</button>
+    </div>
+  </div>
+  <p class="note">Prețurile de mai sus sunt fără TVA și sunt orientative (*).</p>
+</div>
+<div id="Proiect-special">
+  <div class="container">
+    <div class="Proiect-special-text">
+      <h1>AI UN PROIECT SPECIAL?</h1>
+      <a routerLink="/contact" class="btn-proiectspecial">HAI SA DISCUTAM</a>
+    </div>
+  </div>
+</div>
+<div class="info-text">
+  <div class="container">
+    <div class="info-list">
+      <div class="info">
+        <h1>OFERTA NOASTRA<br> FULL PROTECTIE CERAMICA</h1>
+        <h2>€420</h2>
+        <h3 class="line"></h3>
+      </div>
+      <div class="info">
+        <p>
+          Vrei ca masina ta sa beneficieze toata de protectie ceramica?<br><br>
+
+          Iti punem la dispozitie urmatoarea oferta:<br>
+          Pe Caroserie: (Necesita un pachet de detaling exterior in prealabil)<br> Valabilitate 4ani sau 50k km! Strat dublu de ceramica cu cel mai bun efect hidrofob pe care il poti obtine
+          si cu cel mai bun luciu adus vreodata lacului.<br><br>
+
+          Pe Jante:<br> Valabilitate 9luni sau 10k km! Protejeaza-ti lacul jantelor tale cu o putere de rezistenta a protectiei ceramice la
+          temperaturi cuprinse intre 350°C, duritate +3H si o grosime de 0.5 qm.<br><br>
+
+          Pe Parbriz, geamurile Laterale si Luneta:<br> Valabilitate 1an sau 12k km! Pe timp de ploaie, cu o viteza de peste 70km/h
+          nu vei fi nevoit sa folosesti stergatoarele. Vei beneficia de o vizibilitate maxima pe timp ploios.<br><br>
+
+          Pe Plastice:<br> Valabilitate >1an sau 15k km! Restaureaza sau Amplifica culoarea plasticului tau si bucura-te de efectul ei hidrofob.<br><br>
+
+          Pe Piele:<br> Valabilitate 18 luni! Protejeaza-ti pielea impotriva razelor UV si a transferului de culoare, astfel te vei bucura de o
+          de o piele intretinuta si mereu vei avea senzatia ca interiorul masinii tale este nou.<br>
+        </p>
+      </div>
+      <div class="info">
+        <img src="../../../assets/images/ceramica.jpg" class="img-aboutUs" alt="About Us Image">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="copyright">
+  <p>Copyright by &#64;DETAIL FRANK</p>
+</div>
+<div class="container">
+  <nav>
+    <a routerLink="/">
+      <img src="../../../assets/images/Logo.png" class="logo" alt="Footer Logo">
+    </a>
+    <p>Copyright by<br> &#64;DETAIL FRANK</p>
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/about-us">AboutUs</a></li>
+      <li><a routerLink="/services">Services</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+      <li><a href="#">Politica de Cookie</a></li>
+      <li><a href="#">Politica de confidentialitate</a></li>
+    </ul>
+  </nav>
+</div>
