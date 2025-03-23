@@ -7,6 +7,7 @@ import { ServicesComponent } from './services/services.component';
 import { DetailingInteriorComponent } from './services/detailing-interior/detailing-interior.component';
 import { DetailingExteriorComponent } from './services/detailing-exterior/detailing-exterior.component';
 import { ProtectieCeramicaComponent } from './services/protectie-ceramica/protectie-ceramica.component';
+import { DetailingMotorComponent } from './services/detailing-motor/detailing-motor.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect default route
@@ -17,6 +18,7 @@ export const routes: Routes = [
   { path: 'detailing-interior', component: DetailingInteriorComponent },
   { path: 'detailing-exterior', component: DetailingExteriorComponent },
   { path: 'protectie-ceramica', component: ProtectieCeramicaComponent },
+  { path: 'detailing-motor', component: DetailingMotorComponent },
 ];
 
 @NgModule({

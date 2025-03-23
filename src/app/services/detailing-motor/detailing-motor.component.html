@@ -1,1 +1,90 @@
-<p>detailing-motor works!</p>
+<div id="aboutUs">
+  <div class="container">
+    <nav>
+      <a routerLink="/">
+        <img src="../../../assets/images/Logo.png" class="logo" alt="Logo">
+      </a>
+      <ul id="sidemenu">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/about-us">AboutUs</a></li>
+        <li><a routerLink="/services">Services</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" (click)="closeMenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" (click)="openMenu()"></i>
+    </nav>
+    <div class="header-text">
+      <h1>Motor<span> D.</span></h1>
+    </div>
+  </div>
+</div>
+<div class="info-text">
+  <div class="container">
+    <div class="info-list">
+      <div class="info">
+        <h1>Detailing Motor</h1>
+        <h2>DETAIL<br>FRANK</h2>
+        <h3 class="line"></h3>
+      </div>
+      <div class="info">
+        <p>
+          Este un proces meticulos prin care curățăm și protejăm compartimentul motor, eliminând murdăria, grăsimea și
+           depunerile care se pot acumula în timp.<br><br>
+
+          Se poate percepe o taxă suplimentară pentru poluare gravă sau multe fire de păr de câine / pisică.
+          Solicitați o ofertă gratuită contactându-ne prin e-mail sau vizitați locația noastră fără obligații.
+        </p>
+      </div>
+      <div class="info">
+        <img src="../../../assets/images/8.jpg" class="img-aboutUs" alt="About Us Image">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="price-cards">
+  <h2>Preturi detailing motor</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Detailing motor</h3>
+      <p class="price">€<span>50</span></p>
+      <ul>
+        <li>Acoperirea componentelor sensibile (alternator, senzori, cabluri electrice, ECU)</li>
+        <li>Aplicarea degresantului</li>
+        <li>Actionare manuala</li>
+        <li>Clatire</li>
+        <li>Aplicare dressing</li>
+      </ul>
+      <p class="duration">⏺ Durata aproximativa: 2 ore</p>
+      <button routerLink="/contact" class="btn">FĂ O PROGRAMARE</button>
+    </div>
+    </div>
+  <p class="note">Prețurile de mai sus sunt fără TVA și sunt orientative (*).</p>
+</div>
+
+<div id="Proiect-special">
+  <div class="container">
+    <div class="Proiect-special-text">
+      <h1>AI UN PROIECT SPECIAL?</h1>
+      <a routerLink="/contact" class="btn-proiectspecial">HAI SA DISCUTAM</a>
+    </div>
+  </div>
+</div>
+<div class="copyright">
+  <p>Copyright by &#64;DETAIL FRANK</p>
+</div>
+<div class="container">
+  <nav>
+    <a routerLink="/">
+      <img src="../../../assets/images/Logo.png" class="logo" alt="Footer Logo">
+    </a>
+    <p>Copyright by<br> &#64;DETAIL FRANK</p>
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/about-us">AboutUs</a></li>
+      <li><a routerLink="/services">Services</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+      <li><a href="#">Politica de Cookie</a></li>
+      <li><a href="#">Politica de confidentialitate</a></li>
+    </ul>
+  </nav>
+</div>
