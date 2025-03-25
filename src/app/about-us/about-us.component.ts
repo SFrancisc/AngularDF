@@ -29,6 +29,11 @@ export class AboutUsComponent {
     // Example: Set a style to hide the menu
     this.sidemenuStyle = { 'display': 'none' };
   }
+
+  scrollToTop() {;
+    // Derulează până în vârful paginii
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
 
 export const routes = [

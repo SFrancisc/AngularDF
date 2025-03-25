@@ -5,10 +5,10 @@
         <img src="../../assets/images/Logo.png" class="logo" alt="Logo">
       </a>
       <ul id="sidemenu">
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/about-us">AboutUs</a></li>
-        <li><a routerLink="/services">Services</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
+        <li><a routerLink="/" (click)="scrollToTop()">Home</a></li>
+        <li><a routerLink="/about-us" (click)="scrollToTop()">AboutUs</a></li>
+        <li><a routerLink="/services" (click)="scrollToTop()">Services</a></li>
+        <li><a routerLink="/contact" (click)="scrollToTop()">Contact</a></li>
         <i class="fa-solid fa-xmark" (click)="closeMenu()"></i>
       </ul>
       <i class="fa-solid fa-bars" (click)="openMenu()"></i>
@@ -22,20 +22,19 @@
   <div class="container">
     <div class="info-list">
       <div class="info">
-        <h1>CINE SUNTEM</h1>
-        <h2>DETAIL<br>FRANK</h2>
-        <h3 class="line"></h3>
+        <h1>CINE SUNTEM?</h1>
+        <img src="../../assets/images/Logo2.png" class="decenoi" alt="De Ce Noi">
       </div>
       <div class="info">
         <p>
-          La Detail Frank, nu oferim doar servicii, ci livrăm
-          <span>experiențe memorabile</span>. Suntem determinați să aducem un plus de valoare fiecărui proiect
+          <em>La <strong>Detail Frank</strong>, nu oferim doar servicii, ci <strong>livrăm
+          experiențe memorabile</strong>. Suntem determinați să aducem un plus de valoare fiecărui proiect
           și să stabilim noi standarde în industrie prin calitatea serviciilor noastre premium.<br><br>
-          Oferirim servicii premium și de <span>calitate superioară</span> clienților nostrii, într-o căutare continuă a perfecțiunii si cu o experiență remarcabilă,
+          <strong>Oferirim servicii premium</strong> și de <span>calitate superioară</span> clienților nostrii, într-o căutare continuă a perfecțiunii si cu o experiență remarcabilă,
           ne-am angajat să depășim așteptările clienților noștri prin servicii personalizate și atenție la detalii.<br><br>
-          Credem că fiecare client merită ceva cu <span>adevărat special</span>. De aceea, oferim o gamă largă de nevoi. De la consultanță personalizată,
-          până la servicii de întreținere, infrumusetare și protectie de cea mai înaltă calitate, suntem aici pentru a transforma visurile clienților
-          noștri în realitate.
+          Credem că <strong>fiecare client merită</strong> ceva cu <span>adevărat special</span>. De aceea, oferim o gamă largă de servicii. De la <strong>consultanță personalizată</strong>,
+          până la servicii de <strong>întreținere</strong>, <strong>infrumusetare</strong> și <strong>protectie</strong> de cea mai înaltă calitate, suntem aici ca să <strong>transformăm visurile clienților
+          noștri în realitate</strong>.</em>
         </p>
       </div>
       <div class="info">
