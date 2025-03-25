@@ -1,20 +1,20 @@
 <div id="Home">
   <div class="container">
     <nav>
-      <a routerLink="/">
+      <a (click)="scrollToTop()">
         <img src="assets/images/Logo.png" class="logo" alt="Logo">
       </a>
       <ul id="sidemenu">
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/about-us">About Us</a></li>
-        <li><a routerLink="/services">Services</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
+        <li><a routerLink="/" (click)="scrollToTop()">Home</a></li>
+        <li><a routerLink="/about-us" (click)="scrollToTop()">About Us</a></li>
+        <li><a routerLink="/services" (click)="scrollToTop()">Services</a></li>
+        <li><a routerLink="/contact" (click)="scrollToTop()">Contact</a></li>
         <i class="fa-solid fa-xmark" (click)="closeMenu()"></i>
       </ul>
       <i class="fa-solid fa-bars" (click)="openMenu()"></i>
     </nav>
     <div class="header-text">
-      <p>CE IUBESTI, PROTEJEZI!</p>
+      <p>Ce iubesti, Protejezi!</p>
       <h1>OFERIM SERVICII PROFESIONALE<br> DE DETAILING</h1>
     </div>
     <a routerLink="/contact" class="btn-programare">FA O PROGRAMARE</a>
@@ -23,14 +23,12 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <h1>DETAILING<br> INTERIOR</h1>
-            <img src="assets/images/4.png" alt="Detailing Interior" >
-            <a href="#" class="btn">DETALII</a>
+            <img src="assets/images/4.jpg" alt="Detailing Interior" >
+            <a routerLink="/detailing-interior" class="btn-c1">DETALII</a>
           </div>
           <div class="about-col-2">
-            <h1>DETAILING<br> EXTERIOR</h1>
             <img src="assets/images/3.jpg" alt="Detailing Exterior">
-            <a href="#" class="btn">DETALII</a>
+            <a routerLink="/detailing-exterior" class="btn-c2">DETALII</a>
           </div>
         </div>
       </div>
@@ -57,8 +55,8 @@
           <h1 class="sub-title">CORECTIE LAC</h1>
           <p class="line"></p>
           <p class="paragraf">
-            Un serviciu de corectie lac este compus din mai multe tipuri, cum ar fi: ONE STEP prin folosirea unui
-            singur tip de pad si pasta compound. Al doilea tip TWO STEPS este compus din doua tipuri de pad-uri:
+            &nbsp;&nbsp;Un serviciu de corectie lac este compus din mai multe tipuri, cum ar fi:<br> - ONE STEP prin folosirea unui
+            singur tip de pad si pasta compound.<br> - TWO STEPS este compus din doua tipuri de pad-uri:
             Abraziv in combinatie cu pasta de finish.
           </p>
           <a href="#" class="btn">DETALII</a>
@@ -72,24 +70,14 @@
         <div class="col-4-t">
           <img src="../../assets/images/ceramica.jpg" alt="Protectie Ceramica">
         </div>
-        <div class="col-3-t">
-          <h1 class="sub-title">PROTECTIE CERAMICA</h1>
-          <p class="line"></p>
-          <p class="paragraf">
-            Confera suprafetelor un aspect lucios si neted, contribuind la mentinerea valorii si esteticii
-            acestora pe termen lung. Protectie impotriva agentilor externi, razelor UV so toti factorii ce
-            contribuie la deteriorarea lacului.
-          </p>
-          <a href="#" class="btn">DETALII</a>
-        </div>
       </div>
       <div class="rand">
         <div class="col-3">
           <h1 class="sub-title">PROTECTIE CERAMICA</h1>
           <p class="line"></p>
           <p class="paragraf">
-            Confera suprafetelor un aspect lucios si neted, contribuind la mentinerea valorii si esteticii
-            acestora pe termen lung. Protectie impotriva agentilor externi, razelor UV so toti factorii ce
+            &nbsp;&nbsp;Confera suprafetelor un aspect lucios si neted, contribuind la mentinerea valorii si esteticii
+            acestora pe termen lung.<br> &nbsp;&nbsp;Protectie impotriva agentilor externi, razelor UV so toti factorii ce
             contribuie la deteriorarea lacului.
           </p>
           <a href="#" class="btn">DETALII</a>
@@ -110,7 +98,7 @@
           <h1 class="sub-title">DETAILING INTERIOR</h1>
           <p class="line"></p>
           <p class="paragraf">
-            Revigoreaza interiorul masinii tale, eliminand in acelasi timp petele, bacteriile si mizeria din
+            &nbsp;&nbsp;Revigoreaza interiorul masinii tale, eliminand in acelasi timp petele, bacteriile si mizeria din
             intreg habitaclu.
           </p>
           <a href="#" class="btn">DETALII</a>
@@ -130,7 +118,7 @@
   <!-- Social Media -->
   <div id="social-media">
     <div class="container">
-      <h1 class="social-media-title">Social Media</h1>
+      <h1 class="social-media-title">SOCIAL MEDIA</h1>
       <div class="social-media-list">
         <div class="media">
           <img src="../../assets/images/IG.jpg" alt="Instagram">
@@ -149,7 +137,7 @@
           </div>
         </div>
         <div class="media">
-          <img src="../../assets/images/TICKTOCK.png" alt="TikTok">
+          <img src="../../assets/images/TICKTOCK.jpg" alt="TikTok">
           <div class="layer">
             <h2>TikTok</h2>
             <p>FOLLOW</p>

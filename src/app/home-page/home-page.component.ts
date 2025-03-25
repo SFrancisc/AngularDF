@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { AboutUsComponent } from '../about-us/about-us.component';
 import { ContactComponent } from '../contact/contact.component';
 import { ServicesComponent } from '../services/services.component';
@@ -15,8 +15,9 @@ import { ServicesComponent } from '../services/services.component';
 export class HomePageComponent {
   // Add your sidemenu style or logic if needed
   sidemenuStyle: any;
+  //router: any;
 
-  constructor() { }
+  constructor(private router: Router) {}
 
   openMenu() {
     // Logic for opening the menu
@@ -30,6 +31,10 @@ export class HomePageComponent {
     console.log("Closing menu");
     // Example: Set a style to hide the menu
     this.sidemenuStyle = { 'display': 'none' };
+  }
+  scrollToTop() {;
+    // Derulează până în vârful paginii
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
 
