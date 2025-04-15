@@ -3,21 +3,26 @@ import { Router, RouterModule } from '@angular/router';
 import { AboutUsComponent } from '../about-us/about-us.component';
 import { ContactComponent } from '../contact/contact.component';
 import { ServicesComponent } from '../services/services.component';
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faInstagram, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [RouterModule],
+  imports: [FontAwesomeModule, RouterModule],
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss']
 })
 
 export class HomePageComponent {
+
   // Add your sidemenu style or logic if needed
   sidemenuStyle: any;
   //router: any;
 
-  constructor(private router: Router) {}
+  constructor(library: FaIconLibrary, private router: Router) {
+    library.addIcons(faInstagram, faYoutube, faTiktok);
+  }
 
   openMenu() {
     // Logic for opening the menu

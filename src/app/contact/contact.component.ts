@@ -4,18 +4,25 @@ import { HomePageComponent } from '../home-page/home-page.component';
 import { AboutUsComponent } from '../about-us/about-us.component';
 import { ServicesComponent } from '../services/services.component';
 import { FormsModule } from '@angular/forms';
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faInstagram, faYoutube, faTiktok, faFacebook, faWhatsapp, } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
-  imports: [RouterModule, FormsModule ],
+  imports: [ CommonModule, FontAwesomeModule,RouterModule, FormsModule ],
   standalone: true,
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
   sidemenuStyle: any;
+copied: any;
 
-  constructor() { }
+  constructor(library: FaIconLibrary) {
+      library.addIcons(faInstagram, faYoutube, faTiktok, faFacebook, faWhatsapp, faEnvelope, faPhone);
+    }
 
   openMenu() {
     // Logic for opening the menu
@@ -33,6 +40,14 @@ export class ContactComponent {
   scrollToTop() {;
     // Derulează până în vârful paginii
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  copyPhoneNumber() {
+    const phoneNumber = '+40724552359';
+    navigator.clipboard.writeText(phoneNumber).then(() => {
+      this.copied = true;
+      setTimeout(() => this.copied = false, 2000);
+    });
   }
 
   formStatus: { success: boolean; message: string } | null = null;

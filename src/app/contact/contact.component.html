@@ -24,20 +24,35 @@
     <div class="row">
       <div class="contact-left">
         <h1 class="sub-title"><span>Contact</span> DETAIL FRANK</h1>
-        <p><i class="fa-solid fa-paper-plane"></i> szantofrancisc08&#64;gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> Tel: +40724552359</p>
+        <p style="cursor: pointer;">
+          <fa-icon [icon]="['fas', 'envelope']" style="margin-right: 5px;"></fa-icon>
+          <a href="mailto:szantofrancisc08@gmail.com" style="color: #2b2d42; text-decoration: none; margin-left: 5px;">
+            szantofrancisc08&#64;gmail.com
+          </a>
+        </p>
+        <p (click)="copyPhoneNumber()" style="cursor: pointer;">
+          <fa-icon [icon]="['fas', 'phone']" style="margin-right: 5px;"></fa-icon>
+           Tel:
+          <span style="color: #2b2d42; font-weight: bold;">+40724552359</span>
+          @if (copied) {
+            <span style="color: green; margin-left: 10px;">Copiat!</span>
+          }
+        </p>
         <div class="social-icons">
           <a href="https://www.facebook.com/profile.php?id=100086361797680&locale=ro_RO" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
+            <fa-icon [icon]="['fab', 'facebook']" size="1x"></fa-icon>
           </a>
           <a href="https://www.instagram.com/detail.frank" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
+            <fa-icon [icon]="['fab', 'instagram']" size="1x"></fa-icon>
           </a>
           <a href="https://www.tiktok.com/@detail.frank" target="_blank">
-            <i class="fa-brands fa-tiktok"></i>
+            <fa-icon [icon]="['fab', 'tiktok']" size="1x"></fa-icon>
           </a>
           <a href="https://www.youtube.com/@detail_frank" target="_blank">
-            <i class="fa-brands fa-youtube"></i>
+            <fa-icon [icon]="['fab', 'youtube']" size="1x"></fa-icon>
+          </a>
+          <a href="https://wa.me/40724552359" target="_blank" aria-label="WhatsApp">
+            <fa-icon [icon]="['fab', 'whatsapp']" size="1x"></fa-icon>
           </a>
         </div>
       </div>
