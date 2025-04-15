@@ -1,14 +1,14 @@
 <div id="Services">
   <div class="container">
       <nav>
-          <a routerLink="/">
+          <a routerLink="/" (click)="scrollToTop()">
               <img src="../../assets/images/Logo.png" class="logo" alt="Logo">
           </a>
           <ul id="sidemenu">
-              <li><a routerLink="/">Home</a></li>
-              <li><a routerLink="/aboutUs">AboutUs</a></li>
-              <li><a routerLink="/services">Services</a></li>
-              <li><a routerLink="/contact">Contact</a></li>
+              <li><a routerLink="/" (click)="scrollToTop()">Home</a></li>
+              <li><a routerLink="/about-us" (click)="scrollToTop()">AboutUs</a></li>
+              <li><a routerLink="/services" (click)="scrollToTop()">Services</a></li>
+              <li><a routerLink="/contact" (click)="scrollToTop()">Contact</a></li>
               <i class="fa-solid fa-xmark" (click)="closeMenu()"></i>
           </ul>
           <i class="fa-solid fa-bars" (click)="openMenu()"></i>
@@ -23,24 +23,20 @@
       <div class="container">
           <div class="row">
               <div class="about-col-1">
-                  <h1>DETAILING<br> INTERIOR</h1>
                   <img src="../../assets/images/11.jpg" alt="Detailing Interior">
                   <a href="/detailing-interior" class="btn">DETALII</a>
               </div>
               <div class="about-col-2">
-                  <h1>DETAILING<br> EXTERIOR</h1>
                   <img src="../../assets/images/10.jpg" alt="Detailing Exterior">
                   <a href="/detailing-exterior" class="btn">DETALII</a>
               </div>
           </div>
           <div class="row">
               <div class="about-col-1">
-                  <h1>DETAILING<br> MOTOR</h1>
                   <img src="../../assets/images/8.jpg" alt="Detailing Motor">
                   <a href="detailing-motor" class="btn">DETALII</a>
               </div>
               <div class="about-col-2">
-                  <h1>PROTECTIE<br> CERAMICA</h1>
                   <img src="../../assets/images/9.jpg" alt="Protectie Ceramica">
                   <a href="protectie-ceramica" class="btn">DETALII</a>
               </div>

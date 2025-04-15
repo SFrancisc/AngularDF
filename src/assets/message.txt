@@ -1,0 +1,123 @@
+2. Descrierea detaliată a produselor sau serviciilor (fezabilitatea produsului/ serviciului):
+
+Stadiul de elaborare:
+Platforma CheatBlocker se află în faza de prototip funcțional. În prezent, sunt dezvoltate modulele de autentificare securizată, proctorizare video prin webcam și înregistrare audio, iar modulul de captură ecran este în curs de integrare. Se planifică o versiune beta în termen de 6 luni, care va fi testată cu un grup restrâns de utilizatori (profesori, HR, studenți).
+
+Fotografii și specificații aferente:
+În această etapă, platforma este dezvoltată ca aplicație web (responsive, compatibilă cu PC și laptop) ce va fi completată ulterior cu o aplicație desktop. Specificații cheie:
+
+Dashboard administrativ pentru gestionarea testelor/interviurilor;
+
+Modul de autentificare facială (în lucru);
+
+Înregistrare continuă video + audio;
+
+Captură de ecran la intervale presetate sau la evenimente suspecte;
+
+Algoritm de detectare a schimbării ferestrelor și alt-tab;
+
+Rapoarte generate automat pentru fiecare sesiune.
+
+(Capturi de ecran și prototipuri vor fi atașate în anexa vizuală finală a proiectului.)
+
+Puncte tari (SWOT – Strengths):
+
+Tehnologie proprie și modulară, scalabilă;
+
+Ușor de personalizat pentru diverse instituții;
+
+Costuri mai mici comparativ cu soluțiile internaționale;
+
+Interfață în limba română și posibilitate multilingvă;
+
+Flexibilitate în integrare cu alte platforme (Moodle, Microsoft Teams).
+
+Puncte slabe (SWOT – Weaknesses):
+
+Necesită conexiune stabilă la internet pentru funcționare corectă;
+
+Percepție de „invazivitate” din partea utilizatorilor (monitorizare activă);
+
+Lipsă de reputație pe piață în faza de lansare;
+
+Posibilă dificultate în menținerea actualizărilor continue în lipsa unei echipe full-time.
+
+3. Evaluarea preliminară a pieței (fezabilitatea de marketing):
+
+Determinarea potențialului pieței:
+Piața soluțiilor de proctoring și testare securizată este într-o creștere accelerată la nivel global și european, în special după tranziția masivă către educația și recrutarea online. În România, universitățile, școlile private, platformele de e-learning și firmele de HR sunt în proces de digitalizare și caută soluții sigure pentru evaluare.
+
+Vânzări trecute și prezente (Vt): În România nu există încă un jucător local puternic care să domine acest sector. Majoritatea instituțiilor folosesc soluții externe costisitoare (ex. ProctorU) sau metode improvizate (Zoom + supraveghere manuală).
+
+Estimare vânzări viitoare (Vv):
+
+Anul 1: 10 clienți (licențe anuale de 3.000 lei) = 30.000 lei
+
+Anul 2: 25 clienți (creștere naturală + promovare agresivă) = 75.000 lei
+
+Anul 3: 50 clienți = 150.000 lei
+
+Cota de piață estimată (după 3 ani):
+Estimăm un potențial total de 500 instituții educaționale relevante (facultăți, școli private, centre de training) + 200 firme de recrutare medii/mari în România. Dacă atingem 50 de clienți în anul 3, cota de piață = 50 / 700 ≈ 7.1%.
+
+Evaluarea concurenței:
+
+Concurenți direcți:
+
+TestDome – platformă globală, prețuri în valută, fără interfață localizată.
+
+ProctorU – lider de piață internațional, scump și greu de adaptat la cerințele locale.
+
+Honorlock – accent pe AI și proctoring avansat, cost ridicat.
+
+Concurenți indirecți:
+
+Zoom, Google Meet, MS Teams – utilizate pentru supraveghere informală, dar fără funcții de detecție, securizare sau raportare automată.
+
+Avantaje competitive ale concurenței:
+
+Maturitate tehnologică, echipe mari, parteneriate globale.
+
+Puncte slabe ale concurenței:
+
+Lipsa localizării în limba română;
+
+Lipsa serviciilor tehnice personalizate;
+
+Costuri inaccesibile pentru instituții mici și mijlocii din România.
+
+Strategii de diferențiere și depășire a concurenței:
+
+Prețuri personalizate și flexibile (abonamente lunare/anuale);
+
+Interfață și suport în limba română;
+
+Suport live și onboarding gratuit pentru instituții;
+
+Adaptabilitate: module opționale, integrare ușoară.
+
+Tactici de marketing:
+
+a) Metode și tehnici de vânzare și distribuție:
+
+Website dedicat cu acces demo și formular de ofertare;
+
+Promovare directă prin emailuri și contacte în rețele universitare și HR;
+
+Colaborări cu profesori și influenceri în domeniul educațional.
+
+b) Efort promoțional:
+
+Campanii Facebook Ads și Google Ads (targetate pe instituții de învățământ și companii de recrutare);
+
+Participare la târguri educaționale și de HR;
+
+Prezentări gratuite/demo-uri online în universități și companii.
+
+c) Servicii post-vânzare:
+
+Asistență tehnică prin chat și e-mail 7 zile pe săptămână;
+
+Ghiduri de utilizare și training pentru administratori;
+
+Garanție de funcționare, update-uri gratuite timp de 12 luni.
