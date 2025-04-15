@@ -30,6 +30,10 @@ export class ContactComponent {
     // Example: Set a style to hide the menu
     this.sidemenuStyle = { 'display': 'none' };
   }
+  scrollToTop() {;
+    // Derulează până în vârful paginii
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   formStatus: { success: boolean; message: string } | null = null;
 

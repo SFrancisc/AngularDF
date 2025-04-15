@@ -1,14 +1,14 @@
 <div id="contact">
   <div class="container">
     <nav>
-      <a routerLink="/">
+      <a routerLink="/" (click)="scrollToTop()">
         <img src="../../assets/images/Logo.png" class="logo" alt="Logo">
       </a>
       <ul id="sidemenu">
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/about-us">About Us</a></li>
-        <li><a routerLink="/services">Services</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
+        <li><a routerLink="/" (click)="scrollToTop()">Home</a></li>
+        <li><a routerLink="/about-us" (click)="scrollToTop()">About Us</a></li>
+        <li><a routerLink="/services" (click)="scrollToTop()">Services</a></li>
+        <li><a routerLink="/contact" (click)="scrollToTop()">Contact</a></li>
         <i class="fa-solid fa-xmark" (click)="closeMenu()"></i>
       </ul>
       <i class="fa-solid fa-bars" (click)="openMenu()"></i>
