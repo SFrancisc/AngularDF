@@ -1,14 +1,14 @@
 <div id="aboutUs">
   <div class="container">
     <nav>
-      <a routerLink="/">
+      <a routerLink="/" (click)="scrollToTop()">
         <img src="../../../assets/images/Logo.png" class="logo" alt="Logo">
       </a>
       <ul id="sidemenu">
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/about-us">AboutUs</a></li>
-        <li><a routerLink="/services">Services</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
+        <li><a routerLink="/" (click)="scrollToTop()">Home</a></li>
+        <li><a routerLink="/about-us" (click)="scrollToTop()">AboutUs</a></li>
+        <li><a routerLink="/services" (click)="scrollToTop()">Services</a></li>
+        <li><a routerLink="/contact" (click)="scrollToTop()">Contact</a></li>
         <i class="fa-solid fa-xmark" (click)="closeMenu()"></i>
       </ul>
       <i class="fa-solid fa-bars" (click)="openMenu()"></i>
@@ -23,19 +23,19 @@
     <div class="info-list">
       <div class="info">
         <h1>Detailing Interior</h1>
-        <h2>DETAIL<br>FRANK</h2>
+        <img src="../../assets/images/Logo2.png" class="decenoi" alt="De Ce Noi">
         <h3 class="line"></h3>
       </div>
       <div class="info">
         <p>
-          Întregul interior și compartimentul portbagajului sunt supuse curățării în profunzime.
-          Tapițeria din piele este curățată cu un detergent pentru piele, pH neutru și apoi tratată cu un balsam.
-          Covoarele, mocheta și scaunele din țesătură sunt supuse curățării profunde și extracției cu solutie.
-          Planșa de bord, consola centrală și panourile ușilor sunt curățate și apoi protejate cu un dressing pentru a
+        <em><strong>Întregul interior</strong> precum și <strong>compartimentul portbagajului</strong> sunt supuse curățării în profunzime.
+      <strong>Tapițeria din piele</strong> este curățată și apoi este supusă procesului de <strong>hidratare</strong>.
+    <strong>Covoarele</strong>, <strong>mocheta</strong> și <strong>scaunele</strong> textile sunt spălate prin <strong>inserție-extracție</strong> .
+  <strong>Planșa de bord</strong>, <strong>consola centrală</strong> și <strong>panourile ușilor</strong> sunt curățate și apoi <strong>protejate cu un dressing</strong> pentru a
           obține aspectul lor original. Geamurile sunt curățate fără dungi.<br><br>
 
-          Se poate percepe o taxă suplimentară pentru poluare gravă sau multe fire de păr de câine / pisică.
-          Solicitați o ofertă gratuită contactându-ne prin e-mail sau vizitați locația noastră fără obligații.
+          Se poate percepe o <strong>taxă suplimentară</strong> pentru murdărie gravă sau multe fire de păr de câine / pisică.
+        <strong>Solicitați o ofertă gratuită</strong> contactându-ne prin e-mail sau vizitați locația noastră fără obligații.</em>
         </p>
       </div>
       <div class="info">

@@ -1,14 +1,14 @@
 <div id="aboutUs">
   <div class="container">
     <nav>
-      <a routerLink="/">
+      <a routerLink="/" (click)="scrollToTop()">
         <img src="../../../assets/images/Logo.png" class="logo" alt="Logo">
       </a>
       <ul id="sidemenu">
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/about-us">AboutUs</a></li>
-        <li><a routerLink="/services">Services</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
+        <li><a routerLink="/" (click)="scrollToTop()">Home</a></li>
+        <li><a routerLink="/about-us" (click)="scrollToTop()">AboutUs</a></li>
+        <li><a routerLink="/services" (click)="scrollToTop()">Services</a></li>
+        <li><a routerLink="/contact" (click)="scrollToTop()">Contact</a></li>
         <i class="fa-solid fa-xmark" (click)="closeMenu()"></i>
       </ul>
       <i class="fa-solid fa-bars" (click)="openMenu()"></i>
@@ -23,16 +23,15 @@
     <div class="info-list">
       <div class="info">
         <h1>Detailing Motor</h1>
-        <h2>DETAIL<br>FRANK</h2>
-        <h3 class="line"></h3>
+        <img src="../../assets/images/Logo2.png" class="decenoi" alt="De Ce Noi">
       </div>
       <div class="info">
         <p>
-          Este un proces meticulos prin care curățăm și protejăm compartimentul motor, eliminând murdăria, grăsimea și
+          <em>Este un proces meticulos prin care <strong>curățăm</strong> și <strong>protejăm</strong> compartimentul motor, eliminând <strong>murdăria</strong>, <strong>grăsimea</strong> și
            depunerile care se pot acumula în timp.<br><br>
 
-          Se poate percepe o taxă suplimentară pentru poluare gravă sau multe fire de păr de câine / pisică.
-          Solicitați o ofertă gratuită contactându-ne prin e-mail sau vizitați locația noastră fără obligații.
+           Se poate percepe o <strong>taxă suplimentară</strong> pentru murdărie gravă sau multe fire de păr de câine / pisică.
+           <strong>Solicitați o ofertă gratuită</strong> contactându-ne prin e-mail sau vizitați locația noastră fără obligații.</em>
         </p>
       </div>
       <div class="info">

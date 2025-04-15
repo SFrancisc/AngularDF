@@ -2,14 +2,14 @@
 <div id="aboutUs">
   <div class="container">
     <nav>
-      <a routerLink="/">
+      <a routerLink="/" (click)="scrollToTop()">
         <img src="../../../assets/images/Logo.png" class="logo" alt="Logo">
       </a>
       <ul id="sidemenu">
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/about-us">AboutUs</a></li>
-        <li><a routerLink="/services">Services</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
+        <li><a routerLink="/" (click)="scrollToTop()">Home</a></li>
+        <li><a routerLink="/about-us" (click)="scrollToTop()">AboutUs</a></li>
+        <li><a routerLink="/services" (click)="scrollToTop()">Services</a></li>
+        <li><a routerLink="/contact" (click)="scrollToTop()">Contact</a></li>
         <i class="fa-solid fa-xmark" (click)="closeMenu()"></i>
       </ul>
       <i class="fa-solid fa-bars" (click)="openMenu()"></i>
@@ -24,27 +24,25 @@
     <div class="info-list">
       <div class="info">
         <h1>Protectie Ceramica</h1>
-        <h2>DETAIL<br>FRANK</h2>
-        <h3 class="line"></h3>
+        <img src="../../assets/images/Logo2.png" class="decenoi" alt="De Ce Noi">
       </div>
       <div class="info">
         <p>
-          Descoperă puterea protecției ceramice de ultimă generație, special conceputa pentru a-ți menține vehiculul
-          impecabil și protejat, indiferent de condiții. Alegerea unei protecții ceramice nu înseamnă doar un strat
-          suplimentar – înseamnă un angajament pentru durabilitate și estetică desăvârșită.<br><br>
+          <em>Descoperă <strong>puterea protecției ceramice de ultimă generație</strong>, special conceputa pentru a-ți menține vehiculul
+          impecabil și protejat, indiferent de condiții. <strong>Alegerea unei protecții ceramice nu înseamnă doar un strat
+          suplimentar – înseamnă un angajament pentru durabilitate și estetică desăvârșită.</strong><br><br>
 
-          Ce oferim?<br>
+        <strong>Ce oferim?</strong><br>
           Un proces profesional și personalizat, care combină aplicarea protectiei ceramice cu experiența noastra pentru un
-          rezultat impresionant. Poți alege protecția în funcție de nevoile tale, cu o durabilitate între 1 și 4 ani.<br><br>
+          rezultat impresionant. Poți alege <strong>protecția în funcție de nevoile tale</strong>, cu o durabilitate între <strong>1 și 4 ani</strong><br><br>
 
-          Beneficii unice ale protecției ceramice:<br>
+        <strong>Beneficii unice ale protecției ceramice:</strong><br>
 
-          Barieră avansată împotriva murdăriei: Vopseaua rămâne mai curată pentru mai mult timp, datorită proprietăților
-          hidrofobe extraordinare.<br>
-          Rezistență la zgârieturi? Datorita proprietatilor hidrofobe, masina este mai usor de spalat astfel ca la spalarea manuala se
+      <strong>Barieră împotriva murdăriei:</strong> Vopseaua rămâne mai curată pentru mai mult timp, datorită proprietăților hidrofobe.<br>
+    <strong>Rezistență la zgârieturi?</strong> Datorita proprietatilor hidrofobe, masina este mai usor de spalat astfel ca la spalarea manuala se
           micsoreaza riscul de a zgaria lacul, masina respingand o mare parte din muradrie.<br>
-          Luciu profund și aspect premium: Fiecare detaliu al vopselei tale este amplificat, oferindu-i o strălucire de showroom.<br>
-          Ușurință în întreținere: Vehiculul tău va fi mai ușor de curățat, reducând efortul și timpul necesar spălării.<br><br>
+        <strong>Luciu profund și aspect premium:</strong> Fiecare detaliu al vopselei tale este amplificat, oferindu-i o strălucire de showroom.<br>
+      <strong>Ușurință în întreținere:</strong> Vehiculul tău va fi mai ușor de curățat, reducând efortul și timpul necesar spălării.<br><br></em>
         </p>
       </div>
       <div class="info">
@@ -166,22 +164,22 @@
       </div>
       <div class="info">
         <p>
-          Vrei ca masina ta sa beneficieze toata de protectie ceramica?<br><br>
+          <em><strong>Vrei ca masina ta sa beneficieze toata de protectie ceramica?</strong><br><br>
 
-          Iti punem la dispozitie urmatoarea oferta:<br>
-          Pe Caroserie: (Necesita un pachet de detaling exterior in prealabil)<br> Valabilitate 4ani sau 50k km! Strat dublu de ceramica cu cel mai bun efect hidrofob pe care il poti obtine
+          <strong>Iti punem la dispozitie urmatoarea oferta:</strong><br>
+        <strong>Pe Caroserie:</strong> (Necesita un pachet de detaling exterior in prealabil)<br> Valabilitate <strong>4ani sau 50k km!</strong> Strat dublu de ceramica cu cel mai bun efect hidrofob pe care il poti obtine
           si cu cel mai bun luciu adus vreodata lacului.<br><br>
 
-          Pe Jante:<br> Valabilitate 9luni sau 10k km! Protejeaza-ti lacul jantelor tale cu o putere de rezistenta a protectiei ceramice la
+        <strong>Pe Jante:</strong><br> Valabilitate <strong>9luni sau 10k km!</strong> Protejeaza-ti lacul jantelor tale cu o putere de rezistenta a protectiei ceramice la
           temperaturi cuprinse intre 350°C, duritate +3H si o grosime de 0.5 qm.<br><br>
 
-          Pe Parbriz, geamurile Laterale si Luneta:<br> Valabilitate 1an sau 12k km! Pe timp de ploaie, cu o viteza de peste 70km/h
+        <strong>Pe Parbriz, geamurile Laterale si Luneta:</strong><br> Valabilitate <strong>1an sau 12k km!</strong> Pe timp de ploaie, cu o viteza de peste 70km/h
           nu vei fi nevoit sa folosesti stergatoarele. Vei beneficia de o vizibilitate maxima pe timp ploios.<br><br>
 
-          Pe Plastice:<br> Valabilitate >1an sau 15k km! Restaureaza sau Amplifica culoarea plasticului tau si bucura-te de efectul ei hidrofob.<br><br>
+        <strong>Pe Plastice:</strong><br> Valabilitate <strong>> 1an sau 15k km!</strong> Restaureaza sau Amplifica culoarea plasticului tau si bucura-te de efectul ei hidrofob.<br><br>
 
-          Pe Piele:<br> Valabilitate 18 luni! Protejeaza-ti pielea impotriva razelor UV si a transferului de culoare, astfel te vei bucura de o
-          de o piele intretinuta si mereu vei avea senzatia ca interiorul masinii tale este nou.<br>
+      <strong>Pe Piele:</strong><br> Valabilitate <strong>18 luni!</strong> Protejeaza-ti pielea impotriva razelor UV si a transferului de culoare, astfel te vei bucura de o
+          de o piele intretinuta si mereu vei avea senzatia ca interiorul masinii tale este nou.</em><br>
         </p>
       </div>
       <div class="info">

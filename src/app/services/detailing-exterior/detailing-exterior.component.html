@@ -1,14 +1,14 @@
 <div id="aboutUs">
   <div class="container">
     <nav>
-      <a routerLink="/">
+      <a routerLink="/" (click)="scrollToTop()">
         <img src="../../../assets/images/Logo.png" class="logo" alt="Logo">
       </a>
       <ul id="sidemenu">
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/about-us">AboutUs</a></li>
-        <li><a routerLink="/services">Services</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
+        <li><a routerLink="/" (click)="scrollToTop()">Home</a></li>
+        <li><a routerLink="/about-us" (click)="scrollToTop()">AboutUs</a></li>
+        <li><a routerLink="/services" (click)="scrollToTop()">Services</a></li>
+        <li><a routerLink="/contact" (click)="scrollToTop()">Contact</a></li>
         <i class="fa-solid fa-xmark" (click)="closeMenu()"></i>
       </ul>
       <i class="fa-solid fa-bars" (click)="openMenu()"></i>
@@ -23,38 +23,33 @@
     <div class="info-list">
       <div class="info">
         <h1>Detailing Exterior</h1>
-        <h2>DETAIL<br>FRANK</h2>
-        <h3 class="line"></h3>
+        <img src="../../assets/images/Logo2.png" class="decenoi" alt="De Ce Noi">
       </div>
       <div class="info">
         <p>
-          La secțiunea noastră de Detailing Exterior, îți oferim un pachet complet care îmbină strălucirea originală
-           a mașinii tale si protectia în același timp de factorii externi.<br><br>
+          <em>Iți oferim un pachet complet care îmbină <strong>strălucirea originală</strong>
+           a mașinii tale si <strong>protectia</strong> în același timp de factorii externi.<br><br>
 
-           1. Spălare Profesională<br>
-          Procesul începe cu o spălare profundă și delicată, folosind produse premium și tehnici avansate pentru a
-          elimina murdăria, contaminanții și particulele de pe suprafața vopselei, jantelor și geamurilor.
+          <strong>1. Spălare Profesională</strong><br>
+          Procesul începe cu o spălare delicată, folosind <strong>produse premium</strong> și <strong>tehnici avansate</strong> pentru a
+          elimina murdăria și contaminanții <strong>fara riscul de a apărea zgarieturi</strong>.
           Fiecare detaliu este atent curățat pentru a pregăti suprafața pentru următorii pași.<br><br>
 
-           2. Decontaminare<br>
+           2. <strong>Decontaminare</strong><br>
           Prin utilizarea clay bar-ului și a soluțiilor specializate, eliminăm impuritățile persistente, precum
-          bitumul, particulele de fier, petele de apă sau reziduurile industriale, lăsând suprafața netedă și impecabilă.<br><br>
+        <strong>bitumul</strong>, <strong>particulele de fier</strong>, <strong>petele de apă</strong> sau <strong>reziduurile industriale</strong>, lăsând suprafața netedă și impecabilă.<br><br>
 
-           3. Corectie Lac<br>
-          Procesul de corectare a vopselei constă într-un "polish" efectuat cu 1 pana la 3 pași, în funcție de starea
+           3. <strong>Corectie Lac</strong><br>
+          Procesul de corectare a lacului constă într-un "polish" efectuat cu <strong>1 pana la 3 pași</strong>, în funcție de starea
           vehiculului. Aceasta include:<br><br>
 
-          Corecția primară pentru a îndepărta zgârieturile și imperfecțiunile adânci.
-          Lustruirea de finețe, care restabilește strălucirea și adâncimea culorii originale.
-          Pașii suplimentari, pentru o finisare de showroom, perfectă pentru pasionații de detalii.<br><br>
+           4. <strong>Protecție Finală: Ceară sau Protectie Ceramică</strong><br>
+          Pentru a menține rezultatele obținute, aplicăm o <strong>protecție durabilă</strong> și <strong>performantă</strong>:<br><br>
 
-           4. Protecție Finală: Ceară sau Protectie Ceramică<br>
-          Pentru a menține rezultatele obținute, aplicăm o protecție durabilă și performantă:<br><br>
-
-          Sealant sintetic: pentru o protecție superioară și un luciu spectaculos.<br> Valabilitate < 1 luna <br>
-          Ceară premium: ideală pentru un aspect clasic si lucios.<br> Valabilitate < 6 luni<br>
-          Protectie ceramică: soluția ultimă împotriva murdăriei, zgârieturilor fine și razelor UV, oferind protecție
-          pe termen lung și o strălucire de neegalat.<br> Valabilitate 1 - 4 ani
+        <strong>Sealant sintetic</strong>: pentru o protecție superioară și un luciu spectaculos.<br> Valabilitate <strong>< 1 luna</strong> <br>
+      <strong>Ceară premium</strong>: ideală pentru un aspect clasic si lucios.<br> Valabilitate <strong>< 6 luni</strong><br>
+    <strong>Protectie ceramică</strong>: soluția ultimă împotriva murdăriei, zgârieturilor fine și razelor UV, oferind protecție
+          pe termen lung și o strălucire de neegalat.<br> Valabilitate <strong>1 - 4 ani</strong>.</em>
         </p>
       </div>
       <div class="info">
