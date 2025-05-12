@@ -448,6 +448,50 @@ nav ul li a:hover::after{
 .media:hover .layer{
   height: 100%;
 }
+/*----------------ChatBuble---------------*/
+.chat-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chat-window {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background: white;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
 /*------------CSS small screen------------*/
 nav .fa-solid{
   display: none;

@@ -154,6 +154,22 @@
       </div>
     </div>
   </div>
+  <div class="chat-bubble" (click)="toggleChat()">💬</div>
+
+<div class="chat-window" *ngIf="isOpen">
+  <div class="chat-header">
+    Chat Asistent
+    <button (click)="toggleChat()">✖️</button>
+  </div>
+  <div class="chat-messages">
+    <div *ngFor="let msg of messages">
+      <strong>{{ msg.role }}:</strong> {{ msg.content }}
+    </div>
+    <button (click)="resetChat()">🔄 Resetează chatul</button>
+  </div>
+  <input [(ngModel)]="userInput" (keydown.enter)="sendMessage()" placeholder="Scrie un mesaj..." />
+</div>
+
   <!-- Footer
   <div class="copyright">
     <p>Copyright by &#64;DETAIL FRANK</p>
