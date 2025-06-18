@@ -5,25 +5,48 @@ import { ContactComponent } from '../contact/contact.component';
 import { ServicesComponent } from '../services/services.component';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faInstagram, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faPaperPlane, faXmark, faRotate } from '@fortawesome/free-solid-svg-icons';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
   imports: [FontAwesomeModule, RouterModule, FormsModule, CommonModule, HttpClientModule],
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss']
+  styleUrls: ['./home-page.component.scss'],
+  animations: [
+  trigger('chatAnimation', [
+    state('closed', style({
+      transform: 'scale(0) translateY(50%)',
+      opacity: 0,
+      transformOrigin: 'bottom right'
+    })),
+    state('open', style({
+      transform: 'scale(1) translateY(0)',
+      opacity: 1,
+      transformOrigin: 'bottom right'
+    })),
+    transition('closed => open', [
+      animate('1s ease-out')
+    ]),
+    transition('open => closed', [
+      animate('300ms ease-in')
+    ])
+  ])
+]
 })
 export class HomePageComponent implements OnInit {
   sidemenuStyle: any;
   isOpen: boolean = false;
+  isVisible: boolean = false;
   userInput: string = '';
   messages: { role: string, content: string }[] = [];
 
   constructor(private http: HttpClient, library: FaIconLibrary, private router: Router) {
-    library.addIcons(faInstagram, faYoutube, faTiktok);
+    library.addIcons(faInstagram, faYoutube, faTiktok, faPaperPlane, faXmark, faRotate);
   }
 
   ngOnInit(): void {
@@ -48,8 +71,19 @@ export class HomePageComponent implements OnInit {
   }
 
   toggleChat() {
-    this.isOpen = !this.isOpen;
+  if (this.isOpen) {
+    this.isOpen = false; // închide animația
+  } else {
+    this.isVisible = true; // adaugă în DOM
+    this.isOpen = true;    // deschide animația
   }
+}
+
+onAnimationDone(event: any) {
+  if (event.toState === 'closed') {
+    this.isVisible = false; // scoate din DOM după animație
+  }
+}
 
   sendMessage() {
     if (!this.userInput.trim()) return;
@@ -75,7 +109,6 @@ export class HomePageComponent implements OnInit {
       localStorage.setItem('chatMessages', JSON.stringify(this.messages));
     });
   }
-
 
   clearChat() {
     this.messages = [];
