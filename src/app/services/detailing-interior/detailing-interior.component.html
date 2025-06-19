@@ -111,6 +111,52 @@
     </div>
   </div>
 </div>
+
+<div class="chat-bubble" (click)="toggleChat()" >
+  💬
+</div>
+
+<div
+  class="chat-window"
+  *ngIf="isVisible"
+  [@chatAnimation]="isOpen ? 'open' : 'closed'"
+  (@chatAnimation.done)="onAnimationDone($event)">
+
+<div class="chat-header">
+  <img src="../../assets/images/avatarAI.png" alt="Avatar" class="chat-avatar" />
+  <div class="chat-header-texts">
+    <span class="small-text">Chat Asistent</span>
+    <span class="big-text">Detail Frank AI</span>
+  </div>
+  <button class="close-btn" (click)="toggleChat()">
+    <fa-icon [icon]="['fas', 'xmark']"></fa-icon>
+  </button>
+</div>
+
+
+<div class="chat-messages">
+    <div *ngFor="let msg of messages" [ngClass]="msg.role === 'user' ? 'user-msg' : 'assistant-msg'">
+      <div class="message-bubble">
+        {{ msg.content }}
+      </div>
+    </div>
+    <button class="reset-chat-btn" (click)="resetChat()">
+  <fa-icon [icon]="['fas', 'rotate']"></fa-icon>
+  Resetează chatul
+</button>
+  </div>
+
+<div class="chat-input-area">
+  <input
+    [(ngModel)]="userInput"
+    (keydown.enter)="sendMessage()"
+    placeholder="Scrie un mesaj..."
+  />
+  <button class="send-icon-btn" (click)="sendMessage()" title="Trimite">
+    <fa-icon [icon]="['fas', 'paper-plane']"></fa-icon>
+  </button>
+</div>
+</div>
 <!-- Footer
   <div class="copyright">
     <p>Copyright by &#64;DETAIL FRANK</p>
