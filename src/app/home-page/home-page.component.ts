@@ -50,6 +50,12 @@ export class HomePageComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    const savedChatState = localStorage.getItem('chatIsOpen');
+    this.isOpen = savedChatState ? JSON.parse(savedChatState) : false;
+
+    if (this.isOpen) {
+      this.isVisible = true;
+    }
     // Încărcăm istoricul conversației de pe server
     this.http.get<{ messages: { role: string, content: string }[] }>('http://localhost:3000/get-history').subscribe(response => {
       this.messages = response.messages;
@@ -73,9 +79,11 @@ export class HomePageComponent implements OnInit {
   toggleChat() {
   if (this.isOpen) {
     this.isOpen = false; // închide animația
+    localStorage.setItem('chatIsOpen', 'false');
   } else {
     this.isVisible = true; // adaugă în DOM
     this.isOpen = true;    // deschide animația
+    localStorage.setItem('chatIsOpen', 'true');
   }
 }
 

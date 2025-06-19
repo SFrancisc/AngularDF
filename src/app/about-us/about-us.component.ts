@@ -50,6 +50,12 @@ copied: any;
     }
 
       ngOnInit(): void {
+    const savedChatState = localStorage.getItem('chatIsOpen');
+    this.isOpen = savedChatState ? JSON.parse(savedChatState) : false;
+
+    if (this.isOpen) {
+      this.isVisible = true;
+    }
     // Încărcăm istoricul conversației de pe server
     this.http.get<{ messages: { role: string, content: string }[] }>('http://localhost:3000/get-history').subscribe(response => {
       this.messages = response.messages;
@@ -78,10 +84,12 @@ copied: any;
   }
    toggleChat() {
   if (this.isOpen) {
-    this.isOpen = false; // închide animația
+    this.isOpen = false;
+    localStorage.setItem('chatIsOpen', 'false');
   } else {
-    this.isVisible = true; // adaugă în DOM
-    this.isOpen = true;    // deschide animația
+    this.isVisible = true;
+    this.isOpen = true;
+    localStorage.setItem('chatIsOpen', 'true');
   }
 }
 
